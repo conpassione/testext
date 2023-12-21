@@ -1,0 +1,4 @@
+// TypoScript Configuration for TCEMAIN
+
+TCEMAIN.translateToMessage = %s:
+TCEMAIN.table.tt_content.disablePrependAtCopy = 1

@@ -1,0 +1,14 @@
+base: 'https://testext.ddev.site/main'
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    languageId: 0
+    base: /
+    locale: de_CH
+    navigationTitle: Deutsch
+    flag: ch
+    hreflang: de-CH
+    websiteTitle: ''
+rootPageId: 1
+websiteTitle: EXTDEV

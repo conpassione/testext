@@ -1,0 +1,12 @@
+// mod Configuration
+
+# Anzeige im Listenmodul konfigurieren
+[backend.user.isAdmin == false]
+    mod.web_list {
+        # Tables ausblenden in Listenansicht
+        hideTables = pages
+    }
+[global]
+
+# Linkvalidator konfigurieren
+mod.linkvalidator.linkhandler.reportHiddenRecords = 1

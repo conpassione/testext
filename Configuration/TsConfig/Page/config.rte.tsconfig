@@ -1,0 +1,4 @@
+# cke-editor konfigurieren
+# RTE.default {
+#    preset = cpbase
+#}

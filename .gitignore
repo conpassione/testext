@@ -1,0 +1,10 @@
+.DS_Store
+composer.lock
+extdev.json
+extdev2.json
+.Build/
+.ddev/
+.idea/
+Build/
+Tests/
+var/

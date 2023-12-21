@@ -1,0 +1,12 @@
+// TypoScript Configuration for TCEFORM
+
+# Eigenschaften der CE-Elemente
+TCEFORM.tt_content {
+    linkToTop.disabled = 1
+    #space_before_class.disabled = 1
+    #space_after_class.disabled = 1
+    imageheight.disabled = 1
+    imageborder.disabled = 1
+    rowDescription.disabled = 1
+    imagecols = 1
+}

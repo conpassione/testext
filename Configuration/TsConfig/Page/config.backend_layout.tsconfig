@@ -1,0 +1,32 @@
+// Configuration of Backendlayouts
+
+mod {
+    web_layout {
+        BackendLayouts {
+            Default {
+                title = DefaultBackendLayout
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = Inhalt
+                                        colPos = 0
+                                        #allowed {
+                                        #  CType = xxx
+                                        #}
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                #                icon = EXT:cp_base/Resources/Public/Icons/Standard.gif
+            }
+        }
+
+    }
+}
