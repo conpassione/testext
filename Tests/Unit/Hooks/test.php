@@ -1,3 +1,3 @@
 <?php
 
-// das ist ein Test
+// das ist
