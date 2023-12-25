@@ -27,7 +27,7 @@
   "description": "conPassione Basis-Extension",
   "extra": {
     "branch-alias": {
-      "dev-main": "main"
+      "dev-master": "main"
     },
     "typo3/cms": {
       "extension-key": "testext",
