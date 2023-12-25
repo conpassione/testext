@@ -26,9 +26,6 @@
   },
   "description": "conPassione Basis-Extension",
   "extra": {
-    "branch-alias": {
-      "dev-master": "main"
-    },
     "typo3/cms": {
       "extension-key": "testext",
       "web-dir": ".Build/public"
