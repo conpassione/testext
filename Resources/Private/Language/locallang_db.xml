@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>database</type>
+        <description>Language labels for database tables/fields belonging to extension 'kuhteams'</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+
+            <label index="tx_kuhteams_domain_model_team">Datensatz Typ KuH-Team</label>
+            <label index="tx_kuhteams_domain_model_team.tx_extbase_type">TeamType</label>
+            <label index="tx_kuhteams_domain_model_team.dogname">Hundename</label>
+            <label index="tx_kuhteams_domain_model_team.mobile">Mobile</label>
+            <label index="tx_kuhteams_domain_model_team.dogbirthdate">Geburtstag Hund</label>
+            <label index="tx_kuhteams_domain_model_team.dograce">Hunderasse</label>
+            <label index="tx_kuhteams_domain_model_team.dogsex">Geschlecht Hund</label>
+        </languageKey>
+    </data>
+</T3locallang>

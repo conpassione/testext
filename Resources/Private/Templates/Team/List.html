@@ -1,0 +1,49 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <f:flashMessages />
+    <div class="cp-box-container frame-default frame-layout-0 kuh-teamlist">
+    <f:for each="{teams}" as="team">
+        <div class="cp-box cp-box4 frame-default frame-layout-0">
+          <f:if condition="({feuserid}=={team.uid}) || {isadmin}">
+              <f:then>
+                  <f:link.action action="edit" arguments="{team : team}">
+                      <f:for each="{team.image}" as="foto">
+                          <f:image image="{foto}" alt="{team.lastname} {team.firstname} - {team.dogname}" title="{team.lastname} {team.firstname} - {team.dogname}" />
+                      </f:for>
+                      <h3>{team.lastname} {team.firstname} - {team.dogname}</h3>
+                  </f:link.action>
+                  <p>
+                      <f:link.external uri="{team.mobile}" defaultScheme="tel" class="cp-link--ifon">{team.mobile}</f:link.external><br>
+                      {team.zip} {team.city}<br>
+                      <f:link.email class="cp-link--mail" email="{team.email}"/><br>
+                  </p>
+              </f:then>
+              <f:else if="{feuserid} > 0">
+                  <f:link.action action="show" arguments="{team : team}">
+                      <f:for each="{team.image}" as="foto">
+                          <f:image image="{foto}" alt="{team.lastname} {team.firstname} - {team.dogname}" title="{team.lastname} {team.firstname} - {team.dogname}" />
+                      </f:for>
+                      <h3>{team.lastname} {team.firstname} - {team.dogname}</h3>
+                  </f:link.action>
+                  <p>
+                      <f:link.external uri="{team.mobile}" defaultScheme="tel" class="cp-link--ifon">{team.mobile}</f:link.external><br>
+                      {team.zip} {team.city}<br>
+                      <f:link.email class="cp-link--imail" email="{team.email}"/><br>
+                  </p>
+              </f:else>
+              <f:else>
+                  <f:for each="{team.image}" as="foto">
+                      <f:image image="{foto}" alt="{team.lastname} {team.firstname} - {team.dogname}" title="{team.lastname} {team.firstname} - {team.dogname}" />
+                  </f:for>
+                  <h3>{team.lastname} {team.firstname} - {team.dogname}</h3>
+                  <p>{team.city}<br></p>
+              </f:else>
+          </f:if>
+      </div>
+    </f:for>
+    </div>
+    <p>&nbsp;</p>
+</f:section>
+</html>

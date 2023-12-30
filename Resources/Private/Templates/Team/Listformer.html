@@ -1,0 +1,14 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:layout name="Default" />
+
+<f:section name="Main">
+
+  <div class="frame frame-default frame-layout-0 kuh-teamlist">
+	  <f:for each="{teams}" as="team">
+	  	<div class="cp-col3 frame-default frame-layout-0">
+				<p>{team.last_name} {team.first_name} - {team.dogname}</p>
+	  	</div>
+		</f:for>
+	</div>
+
+</f:section>

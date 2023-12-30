@@ -1,0 +1,69 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<div class="tx-kuhteams-rahmen">
+<div class="row tx-kuhteams-form" >
+    <div class="col col-lg-2">
+        <div class="form-group">
+            <label for="username">Benutzername:</label>
+            <f:form.textfield id="username" property="username" value="{team.username}" readonly="readonly" />
+        </div>
+        <div class="form-group">
+            <label for="password">Passwort:</label>
+            <f:form.password id="password" property="password" value="{team.password}"/>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Nachname:</label>
+            <f:form.textfield id="lastName" property="lastName" value="{team.lastName}"/>
+        </div>
+        <div class="form-group">
+            <label for="firstName">Vorname:</label>
+            <f:form.textfield id="firstName" property="firstName" value="{team.firstName}"/>
+        </div>
+        <div class="form-group">
+            <label for="address">Adresse:</label>
+            <f:form.textfield id="address" property="address" value="{team.address}"/>
+        </div>
+        <div class="form-group">
+            <label for="zip">PLZ:</label>
+            <f:form.textfield id="zip" property="zip" value="{team.zip}"/>
+        </div>
+        <div class="form-group">
+            <label for="city">Ort:</label>
+            <f:form.textfield id="city" property="city" value="{team.city}"/>
+        </div>
+        <div class="form-group">
+            <label for="telephone">Telefon:</label>
+            <f:form.textfield id="telephone" property="telephone" value="{team.telephone}"/>
+        </div>
+        <div class="form-group">
+            <label for="mobile">Mobiltelefon:</label>
+            <f:form.textfield id="mobile" property="mobile" value="{team.mobile}" />
+        </div>
+        <div class="form-group">
+            <label for="email">E-Mail:</label>
+            <f:form.textfield id="email" property="email" value="{team.email}"/>
+        </div>
+    </div>
+    <div class="col col-lg-2">
+        <div class="form-group">
+            <label for="dogname">Hundename:</label>
+            <f:form.textfield id="dogname" property="dogname" value="{team.dogname}"/>
+        </div>
+        <div class="form-group">
+            <label for="dogbirthdate">Geburtstag Hund:</label>
+            <f:form.textfield id="dogbirthdate" property="dogbirthdate" value="{team.dogbirthdate}"/>
+        </div>
+        <div class="form-group">
+            <label for="dograce">Hunderasse:</label>
+            <f:form.textfield id="dograce" property="dograce" value="{team.dograce}"/>
+        </div>
+        <div class="form-group">
+            <label for="dogsex">Geschlecht:</label>
+            <f:form.select id="dogsex" size="1" property="dogsex" value="{team.dogsex}" options="{'---':'---','männlich':'männlich','weiblich':'weiblich'}" class="cp-select--teamstatus"/>
+        </div>
+        <div class="form-group">
+            <label for="teamstory">Team Geschichte:</label>
+            <f:form.textarea id="teamstory" property="teamstory" value="{team.teamstory}" rows="8"/>
+        </div>
+    </div>
+</div>
+</div>

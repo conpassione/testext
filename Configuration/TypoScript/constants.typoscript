@@ -1,1 +1,16 @@
 // Used predefined constants
+
+plugin.tx_kuhteams {
+  view {
+    # cat=plugin.tx_kuhteams/file; type=string; label=Path to template root (FE)
+    templateRootPath = EXT:kuhteams/Resources/Private/Templates/
+    # cat=plugin.tx_kuhteams/file; type=string; label=Path to template partials (FE)
+    partialRootPath = EXT:kuhteams/Resources/Private/Partials/
+    # cat=plugin.tx_kuhteams/file; type=string; label=Path to template layouts (FE)
+    layoutRootPath = EXT:kuhteams/Resources/Private/Layouts/
+  }
+  persistence {
+    # cat=plugin.tx_kuhteams//a; type=string; label=Default storage PID
+    storagePid =
+  }
+}

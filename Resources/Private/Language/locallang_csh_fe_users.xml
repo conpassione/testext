@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <description>Context Sensitive Help (CSH) for table fe_users</description>
+        <type>CSH</type>
+        <csh_table>fe_users</csh_table>
+    </meta>
+    <data type="array">
+    <languageKey index="default" type="array">
+
+            <label index="dogname.description">Hundename</label>
+            <label index="mobile.description">Mobiltelefon</label>
+            <label index="dogbirthdate.description">Geburtstag Hund</label>
+            <label index="dograce.description">Hunderasse</label>
+            <label index="dogsex.description">Geschlecht des Hundes</label>
+        </languageKey>
+    </data>
+</T3locallang>

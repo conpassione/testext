@@ -1,12 +1,8 @@
 <?php
+if (!defined('TYPO3_MODE')) {
+	die ('Access denied.');
+}
 
-use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile('kuhteams', 'Configuration/TypoScript', 'KIND&HUND Teams');
 
-defined('TYPO3') or die();
-
-// Provide TypoScript-File to select in TS-Template
-ExtensionManagementUtility::addStaticFile(
-    'testext',
-    'Configuration/TypoScript',
-    'Conpassione Base Extension'
-);
+?>

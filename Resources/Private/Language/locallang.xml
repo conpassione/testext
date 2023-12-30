@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+    <meta type="array">
+        <type>module</type>
+        <description>Language labels for the KUH Teams extension in the FRONTEND</description>
+    </meta>
+    <data type="array">
+        <languageKey index="default" type="array">
+            <label index="tx_kuhteams_domain_model_team">Team extends fe_user</label>
+            <label index="tx_kuhteams_domain_model_team.dogname">Hundename</label>
+            <label index="tx_kuhteams_domain_model_team.mobile">Mobiltelefon</label>
+            <label index="tx_kuhteams_domain_model_team.dogbirthdate">Geburtstag Hund</label>
+            <label index="tx_kuhteams_domain_model_team.dograce">Hunderasse</label>
+            <label index="tx_kuhteams_domain_model_team.dogsex">Geschlecht</label>
+        </languageKey>
+    </data>
+</T3locallang>

@@ -1,3 +1,60 @@
 // TypoScript Frontend Definitions
 
 @import './Library/*.typoscript'
+
+plugin.tx_kuhteams {
+  view {
+    templateRootPaths.0 = {$plugin.tx_kuhteams.view.templateRootPath}
+    partialRootPaths.0 = {$plugin.tx_kuhteams.view.partialRootPath}
+    layoutRootPaths.0 = {$plugin.tx_kuhteams.view.layoutRootPath}
+  }
+  persistence {
+    storagePid = {$plugin.tx_kuhteams.persistence.storagePid}
+  }
+}
+
+config.tx_extbase {
+  persistence {
+    classes {
+      TYPO3\CMS\Extbase\Domain\Model\FrontendUser {
+        subclasses {
+          0 = Conpassione\Kuhteams\Domain\Model\Team
+        }
+      }
+      CP\Kuhteams\Domain\Model\Team {
+        mapping {
+          tableName = fe_users
+          recordType = 0
+        }
+      }
+    }
+  }
+  objects {
+    TYPO3\CMS\Extbase\Domain\Repository\FrontendUserRepository.className = Conpassione\Kuhteams\Domain\Repository\TeamRepository
+  }
+}
+
+
+plugin.tx_kuhteams._CSS_DEFAULT_STYLE (
+    textarea.f3-form-error {
+        background-color:#FF9F9F;
+        border: 1px #FF0000 solid;
+    }
+
+    input.f3-form-error {
+        background-color:#FF9F9F;
+        border: 1px #FF0000 solid;
+    }
+
+    .tx-kuhteams table {
+        border-collapse:separate;
+    }
+
+    .tx-kuhteams table th {
+        font-weight:bold;
+    }
+
+    .tx-kuhteams table td {
+        vertical-align:top;
+    }
+)
